@@ -2,12 +2,34 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
 }
 
 .visually-hidden {
@@ -17,6 +39,13 @@ a {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.container {
+  width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .title {
@@ -34,6 +63,11 @@ a {
 }
 
 /*-------------- HEADER------------------ */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
 
 .header-logo {
   font-weight: 700;
@@ -66,7 +100,13 @@ a {
 /*-------------- HERO------------------ */
 
 .hero {
+  padding-bottom: 80px;
+}
+
+.hero-wrap {
   background-color: rgba(17, 17, 17, 0.6);
+  padding: 380px 40px 40px 40px;
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -75,6 +115,8 @@ a {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  max-width: 484px;
+  margin-bottom: 32px;
 }
 
 .hero-title::selection {
@@ -108,9 +150,13 @@ a {
 
 .features {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .features-list {
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .features-item {
@@ -120,6 +166,7 @@ a {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 
 .features-item-title {
@@ -134,9 +181,14 @@ a {
 /*----------------TASTE---------------- */
 
 .taste {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .taste-title {
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .taste-text {
@@ -145,6 +197,9 @@ a {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .taste-list {
@@ -171,9 +226,12 @@ a {
 /*----------------MADE---------------- */
 
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .made-title {
+  margin-bottom: 50px;
 }
 
 .made-image {
@@ -184,12 +242,23 @@ a {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  max-width: 350px;
+  margin-bottom: 28px;
 }
 
 .made-list {
 }
 
-.made-item {
+/* .made-item {
+  margin-bottom: 24px;
+}
+
+.made-item:last-child {
+  margin-bottom: 0;
+} */
+
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .made-item-text {
